@@ -273,7 +273,7 @@ main .content-wrapper .halves {
   width: 50%;
   padding-top: 20px;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 900px) {
   main .content-wrapper .halves {
     width: 100%;
     padding-top: 15px;
@@ -301,9 +301,17 @@ figure {
   align-content: center;
   justify-content: center;
 }
+figure img {
+  max-width: 100%;
+}
 .halves-icon-links {
   display: flex;
   justify-content: flex-start;
+}
+@media screen and (max-width: 900px) {
+  .halves-icon-links {
+    justify-content: center;
+  }
 }
 .halves-icon-links a {
   font-size: 30px;
@@ -322,4 +330,33 @@ figure {
 }
 .sample {
   margin-bottom: 30px;
+  border-bottom: 1px solid;
+}
+@media screen and (max-width: 900px) {
+  .sample {
+    border-bottom: #009999 1px solid;
+  }
+  .sample h3 {
+    text-align: center;
+  }
+  .sample h4 {
+    text-align: center;
+  }
+}
+#contact h2 {
+  padding-bottom: 20px;
+}
+#contact a {
+  font-size: 30px;
+  color: #a7c265;
+  padding: 10px;
+  margin-right: 40px;
+}
+#contact a i {
+  margin-bottom: 30px;
+}
+#contact a:hover {
+  background: #009999;
+  color: white;
+  border-radius: 5px;
 }

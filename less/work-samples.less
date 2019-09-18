@@ -2,6 +2,11 @@
     display: flex;
     justify-content: flex-start;
 
+
+    @media screen and (max-width: 900px){
+        justify-content: center;
+    }
+
     a {
         font-size: 30px;
         color: @color-two;
@@ -12,6 +17,7 @@
             color: white;
             border-radius: 5px;
         }
+
     }
 }
 
@@ -19,8 +25,23 @@
     display: flex; 
     flex-direction: column;
     justify-content: center;
+
+
 }
 
 .sample {
     margin-bottom: 30px;
+    border-bottom: 1px solid; 
+
+    @media screen and (max-width: 900px){
+        border-bottom: @color-one 1px solid;
+
+        h3 {
+            text-align: center;
+        }
+
+        h4 {
+            text-align: center;
+        }
+    }
 }
