@@ -69,8 +69,12 @@ table {
 /******mixins******/
 
 .container(){
-	width: 80%;
+	width: 60%;
 	margin: 0 auto;
+
+	@media screen and (max-width: 780px) {
+		width: 80%;
+	}
 
 	@media screen and (max-width: 500px){
 		width: 90%;
@@ -210,7 +214,7 @@ main {
 
 		.top {
 			width: 100%;
-			padding-top: 20px;
+			padding-top: 30px;
 			padding-right: 20px;
 			padding-bottom: 30px;
 			border-bottom: 1px @color-one solid;
@@ -244,11 +248,22 @@ main {
 			width: 50%;
 			padding-top: 20px;
 
+
 			@media screen and (max-width: 900px){
 				width: 100%;
 				padding-top: 15px;
 				padding-bottom: 15px;
 			}
+		}
+
+		.thirds {
+			border: 1px red solid;
+			width: 33%;
+			height: 100px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
 		}
 	}
 }

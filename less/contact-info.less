@@ -6,7 +6,6 @@
         font-size: 30px;
         color: @color-two;
         padding: 10px;
-        margin-right: 40px;
        
         i {
             margin-bottom: 30px;
@@ -17,5 +16,54 @@
             color: white;
             border-radius: 5px;
         }
+    }
+
+
+
+}
+
+.contact-me {
+    display: flex;
+    flex-wrap: wrap;
+
+    .full {
+        width: 100%;
+    }
+}
+
+.julz {
+    width: 70%;
+}
+
+.pic-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+
+    h2 {
+        width: 100%;
+    }
+
+    a {
+        font-size: 30px;
+        color: @color-two;
+        padding: 10px;
+
+        &:hover {
+            background: @color-one;
+            color: white;
+            border-radius: 5px;
+        }
+
+    }
+
+    .social-holder {
+        display: flex;
+        align-items: space-between;
     }
 }
