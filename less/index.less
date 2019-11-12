@@ -92,7 +92,7 @@ table {
 	font-size: 25px;
 	color: @color-three;
 	@media screen and (max-width: 800px){
-		margin-bottom: 30px;
+		//margin-bottom: 30px;
 	}
 	@media screen and (max-width: 500px){
 	}
@@ -250,16 +250,26 @@ main {
 			h2 {
 				padding-top: 20px;
 			}
+
+			@media screen and (max-width: 900px) {
+				margin-bottom: 20px;
+			}
 		}
 		.halves {
 			width: 48%;
 			padding-top: 20px;
+
+			h3, h4 {
+				text-align: center;
+			}
 
 
 			@media screen and (max-width: 900px){
 				width: 100%;
 				padding-top: 15px;
 				padding-bottom: 15px;
+
+	
 			}
 		}
 
@@ -283,14 +293,14 @@ main {
 }
 
 footer {
-	background: teal;
+	background: @color-one;
 	text-align: center;
 	padding-top: 30px;
 	padding-bottom: 30px;
 	color: @color-two;
 
 	p {
-		color: @color-one;
+		color: @color-three;
 		.font-stylinz();
 		font-size: 20px;
 	}

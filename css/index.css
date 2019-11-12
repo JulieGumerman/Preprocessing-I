@@ -140,9 +140,6 @@ h2 {
   font-family: 'Roboto Condensed', sans-serif;
 }
 @media screen and (max-width: 800px) {
-  h2 {
-    margin-bottom: 30px;
-  }
 }
 h4 {
   font-size: 18px;
@@ -282,9 +279,18 @@ main .content-wrapper .whole {
 main .content-wrapper .whole h2 {
   padding-top: 20px;
 }
+@media screen and (max-width: 900px) {
+  main .content-wrapper .whole {
+    margin-bottom: 20px;
+  }
+}
 main .content-wrapper .halves {
   width: 48%;
   padding-top: 20px;
+}
+main .content-wrapper .halves h3,
+main .content-wrapper .halves h4 {
+  text-align: center;
 }
 @media screen and (max-width: 900px) {
   main .content-wrapper .halves {
@@ -310,14 +316,14 @@ main .content-wrapper .thirds {
   }
 }
 footer {
-  background: teal;
+  background: #009999;
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
   color: #a7c265;
 }
 footer p {
-  color: #009999;
+  color: #464743;
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 20px;
 }
@@ -335,7 +341,7 @@ figure img {
 }
 .halves-icon-links {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
 }
 @media screen and (max-width: 900px) {
   .halves-icon-links {
@@ -405,6 +411,7 @@ figure img {
 }
 .contact-info {
   flex-wrap: wrap;
+  padding-bottom: 20px;
 }
 .contact-info h2 {
   width: 100%;
